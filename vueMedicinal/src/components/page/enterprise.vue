@@ -698,6 +698,7 @@ export default {
                 this.emp.menuNumList = this.$refs.tree.getCheckedKeys();
                 this.$refs['empForm'].validate(valid => {
                     if (valid) {
+                        this.emp.fatherUserAccount = window.sessionStorage.getItem('ms_username');
                         this.postRequest('/enterpriseInfo', this.emp).then(resp => {
                             if (resp) {
                                 this.dialogVisible = false;
@@ -731,6 +732,7 @@ export default {
         },
         showAddEmpView() {
             this.emptyEmp();
+            
             this.title = '添加企业账户';
             this.dialogVisible = true;
             this.initAllMenus();
