@@ -41,9 +41,7 @@
                 </el-table-column>
                 <el-table-column prop="userAccount" fixed align="left"  label="帐号" width="200"></el-table-column>
                 <el-table-column prop="userName" label="姓名" align="left" fixed width="200"></el-table-column>
-                <el-table-column prop="mname" label="公司名" align="left" fixed width="400"></el-table-column>
-
-
+                <el-table-column prop="mname" label="公司名" align="left" fixed width="800"></el-table-column>
                 <el-table-column fixed="right" width="200" label="操作">
                     <template slot-scope="scope">
                         <el-button

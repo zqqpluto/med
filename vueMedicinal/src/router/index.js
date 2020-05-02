@@ -31,11 +31,36 @@ export default new Router({
                         import ( /* webpackChunkName: "icon" */ '../components/page/enterprise.vue'),
                     meta: { title: '企业用户' }
                 },
+
                 {
                     path: '/enterpriseworker',
                     component: () =>
                         import ( /* webpackChunkName: "icon" */ '../components/page/enterpriseworker.vue'),
                     meta: { title: '企业员工' }
+                },
+                {
+                    path: '/submitExamine',
+                    component: () =>
+                        import ( /* webpackChunkName: "icon" */ '../components/page/submitExamine.vue'),
+                    meta: { title: '提交审核' }
+                },
+                {
+                    path: '/drugExamine',
+                    component: () =>
+                        import ( /* webpackChunkName: "icon" */ '../components/page/drugExamine.vue'),
+                    meta: { title: '审核药品' }
+                },
+                {
+                    path: '/examineNote',
+                    component: () =>
+                        import ( /* webpackChunkName: "icon" */ '../components/page/examineNote.vue'),
+                    meta: { title: '审核记录' }
+                },
+                {
+                    path: '/drugManager',
+                    component: () =>
+                        import ( /* webpackChunkName: "icon" */ '../components/page/drugManager.vue'),
+                    meta: { title: '药品管理' }
                 },
                 {
                     path: '/icon',
