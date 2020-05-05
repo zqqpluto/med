@@ -732,7 +732,6 @@ export default {
         },
         showAddEmpView() {
             this.emptyEmp();
-            
             this.title = '添加企业账户';
             this.dialogVisible = true;
             this.initAllMenus();

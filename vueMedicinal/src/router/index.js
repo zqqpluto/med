@@ -6,7 +6,7 @@ Vue.use(Router);
 export default new Router({
     routes: [{
             path: '/',
-            redirect: '/dashboard'
+            redirect: '/government'
         },
         {
             path: '/',
@@ -63,6 +63,90 @@ export default new Router({
                     meta: { title: '药品管理' }
                 },
                 {
+                    // 富文本编辑器组件
+                    path: '/meiti',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/meiti.vue'),
+                    meta: { title: '媒体资料' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/guowai',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/guowai.vue'),
+                    meta: { title: '国外资料' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/zhongda',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/zhongda.vue'),
+                    meta: { title: '重大事件' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/lingdao',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/lingdao.vue'),
+                    meta: { title: '领导讲话' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/falv',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/falv.vue'),
+                    meta: { title: '法律法规' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/lianghui',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/lianghui.vue'),
+                    meta: { title: '两会文件' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/wenxian',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/wenxian.vue'),
+                    meta: { title: '党的文献' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/biaozhun',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/biaozhun.vue'),
+                    meta: { title: '标准规范' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/zhuanxiang',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/zhuanxiang.vue'),
+                    meta: { title: '专项政策' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/qiye',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/qiye.vue'),
+                    meta: { title: '生产企业' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/kexue',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/kexue.vue'),
+                    meta: { title: '科学研究' }
+                },
+                {
+                    // 富文本编辑器组件
+                    path: '/wenxian',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/wenxian.vue'),
+                    meta: { title: '党的文献' }
+                },
+                {
                     path: '/icon',
                     component: () =>
                         import ( /* webpackChunkName: "icon" */ '../components/page/Icon.vue'),
@@ -88,11 +172,19 @@ export default new Router({
                 },
                 {
                     // 富文本编辑器组件
-                    path: '/editor',
+                    path: '/addAnounce',
                     component: () =>
-                        import ( /* webpackChunkName: "editor" */ '../components/page/VueEditor.vue'),
-                    meta: { title: '富文本编辑器' }
+                        import ( /* webpackChunkName: "editor" */ '../components/page/addAnounce.vue'),
+                    meta: { title: '添加公告' }
                 },
+                {
+                    // 富文本编辑器组件
+                    path: '/anounce',
+                    component: () =>
+                        import ( /* webpackChunkName: "editor" */ '../components/page/anounce.vue'),
+                    meta: { title: '添加公告' }
+                },
+
                 {
                     // markdown组件
                     path: '/markdown',
